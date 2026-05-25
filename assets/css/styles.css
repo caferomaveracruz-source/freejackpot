@@ -239,12 +239,12 @@ a {
 /* ── DESKTOP: 2 banners side by side ── */
 @media (min-width: 769px) {
   .slider-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+display: flex;
+transition: transform 0.5s ease;
   }
 
   .slide {
+     min-width: 100%;
     border-radius: 10px;
     overflow: hidden;
     height: 320px;
