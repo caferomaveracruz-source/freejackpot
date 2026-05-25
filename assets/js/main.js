@@ -65,8 +65,8 @@ function initSlider() {
     }
   }
 
-  setup(mq.matches);
-  mq.addEventListener('change', e => setup(e.matches));
+  setup(true);
+
 }
 
 // ── NAV ITEMS ────────────────────────────────
