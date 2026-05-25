@@ -6,11 +6,13 @@
   <title>5 Lions Gold - FreeJackpot</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <style>
-    .game-page { display:flex; flex-direction:column; height:100vh; }
+    .game-page { display:flex; flex-direction:column; height:100vh; align-items:center; justify-content:center; }
     .game-header {
+      position:fixed; top:0; left:0; right:0;
       background:#111; padding:10px 20px;
       display:flex; align-items:center; gap:16px;
-      border-bottom:1px solid #2a2a2a; flex-shrink:0;
+      border-bottom:1px solid #2a2a2a;
+      z-index:100;
     }
     .back-btn {
       background:#1e1e1e; border:1px solid #2a2a2a;
@@ -20,32 +22,32 @@
     }
     .back-btn:hover { border-color:#00e676; color:#00e676; }
     .game-title { color:#fff; font-size:18px; font-weight:700; }
-    .ad-bar {
-      background:#111; padding:8px;
-      text-align:center; border-bottom:1px solid #2a2a2a;
-      min-height:90px; display:flex;
-      align-items:center; justify-content:center;
-      color:#333; font-size:12px;
+    .play-container {
+      text-align:center; margin-top:80px;
     }
-    .game-frame { flex:1; width:100%; border:none; }
+    .play-btn {
+      background:#00e676; color:#000;
+      padding:20px 50px; border-radius:12px;
+      font-size:24px; font-weight:700;
+      text-decoration:none; display:inline-block;
+      margin-top:20px;
+    }
+    .play-btn:hover { background:#00c853; }
+    .game-img { width:300px; border-radius:12px; margin-bottom:20px; }
   </style>
 </head>
 <body>
-  <div class="game-page">
-    <div class="game-header">
-      <a href="../index.html" class="back-btn">← Lobby</a>
-      <img src="../assets/images/logo1.png" alt="FreeJackpot" style="height:36px;" />
-      <span class="game-title">5 Lions Gold</span>
-    </div>
-    <div class="ad-bar">
-      <!-- Aquí va tu código de Google AdSense -->
-      PUBLICIDAD
-    </div>
-    <iframe
-      class="game-frame"
-      src="https://slotcatalog.com/en/slots/5-Lions-Gold"
-      allowfullscreen
-    ></iframe>
+  <div class="game-header">
+    <a href="../index.html" class="back-btn">← Lobby</a>
+    <img src="../assets/images/logo1.png" alt="FreeJackpot" style="height:36px;" />
+    <span class="game-title">5 Lions Gold</span>
+  </div>
+  <div class="play-container">
+    <img src="../assets/images/miniatura_5_lions_gold.png" class="game-img" />
+    <br/>
+    <a href="https://slotcatalog.com/en/slots/5-Lions-Gold" target="_blank" class="play-btn">
+      ▶ Jugar Gratis
+    </a>
   </div>
 </body>
 </html>
